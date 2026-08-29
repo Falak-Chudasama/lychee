@@ -1,6 +1,6 @@
 export type MediaFormat = 'mp4' | 'mp3'
 
-export const BACKEND = 'http://127.0.0.3:6060'
+export const BACKEND = '/api'
 
 export const mp4Qualities = ['best', '2160p', '1440p', '1080p', '720p', '480p', '360p'] as const
 export const mp3Qualities = ['320', '192', '128'] as const
@@ -43,5 +43,6 @@ export function formatDuration(totalSeconds: number | null) {
   if (hours > 0) {
     return `${hours}:${String(minutes).padStart(2, '0')}:${paddedSeconds}`
   }
+
   return `${minutes}:${paddedSeconds}`
 }
