@@ -1,6 +1,6 @@
 export type MediaFormat = 'mp4' | 'mp3'
 
-export const BACKEND = 'http://127.0.0.1:8000'
+export const BACKEND = 'http://127.0.0.3:6060'
 
 export const mp4Qualities = ['best', '2160p', '1440p', '1080p', '720p', '480p', '360p'] as const
 export const mp3Qualities = ['320', '192', '128'] as const
